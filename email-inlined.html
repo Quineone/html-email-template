@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color-scheme: light; supported-color-schemes: light; margin: 0 auto; padding: 0; height: 100%; width: 100%;"
+>
+  <head>
+    <meta charset="utf-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta
+      name="format-detection"
+      content="telephone=no,address=no,email=no,date=no,url=no"
+    />
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <title>Email Boilerplate</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 320px !important;
+        }
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+      @media screen and (max-width: 480px) {
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+
+        .email-container p {
+          font-size: 17px !important;
+        }
+      }
+    </style>
+    <!-- Progressive Enhancements : END -->
+  </head>
+  <!--
+    The email background color (#222222) is defined in three places:
+    1. body tag: for most email clients
+    2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+    3. mso conditional: For Windows 10 Mail
+  -->
+  <body
+    width="100%"
+    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-line-height-rule: exactly; background-color: #222222; margin: 0 auto; height: 100%; width: 100%; padding: 0;"
+  >
+    <center
+      role="article"
+      aria-roledescription="email"
+      lang="en"
+      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; background-color: #222222;"
+    >
+      <table
+        role="presentation"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+        bgcolor="#222222"
+      >
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td
+            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+          >
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div
+              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-height: 0; overflow: hidden; mso-hide: all;"
+              aria-hidden="true"
+            >
+              (Optional) This text will appear in the inbox preview, but not the
+              email body. It can be used to supplement the email subject line or
+              even summarize the email's contents. Extended text preheaders
+              (~490 characters) seems like a better UX for anyone using a
+              screenreader or voice-command apps like Siri to dictate the
+              contents of an email. If this text is not included, email clients
+              will automatically populate it using the text (including image alt
+              text) at the start of the email's body.
+            </div>
+            <!-- Visually Hidden Preheader Text : END -->
+
+            <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+            <!-- Preview Text Spacing Hack : BEGIN -->
+            <div
+              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"
+            >
+              &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+            </div>
+            <!-- Preview Text Spacing Hack : END -->
+
+            <!--
+              Set the email width. Defined in two places:
+              1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+              2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+              Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+            -->
+            <div
+              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-width: 680px; margin: 0 auto;"
+              class="email-container"
+            >
+              <!-- Email Body : BEGIN -->
+              <table
+                align="center"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-width: 680px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                class="email-container"
+              >
+                <!-- Email Header : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 20px 0; text-align: center; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    align="center"
+                  >
+                    <img
+                      src="https://via.placeholder.com/200x50"
+                      width="200"
+                      height="50"
+                      alt="alt_text"
+                      border="0"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                    />
+                  </td>
+                </tr>
+                <!-- Email Header : END -->
+
+                <!-- Hero Image, Flush : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <img
+                      src="https://via.placeholder.com/1360x600"
+                      width="680"
+                      height=""
+                      alt="alt_text"
+                      border="0"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
+                      class="g-img"
+                    />
+                  </td>
+                </tr>
+                <!-- Hero Image, Flush : END -->
+
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <h1
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;"
+                          >
+                            Praesent laoreet malesuada&nbsp;cursus.
+                          </h1>
+                          <p
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px;"
+                          >
+                            Maecenas sed ante pellentesque, posuere leo id,
+                            eleifend dolor. Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos
+                            himenaeos. Praesent laoreet malesuada cursus.
+                            Maecenas scelerisque congue eros eu posuere.
+                            Praesent in felis ut velit pretium lobortis rhoncus
+                            ut&nbsp;erat.
+                          </p>
+                          <ul
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0; margin: 0; list-style-type: disc;"
+                          >
+                            <li
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 30px;"
+                              class="list-item-first"
+                            >
+                              A list item.
+                            </li>
+                            <li
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 30px;"
+                            >
+                              Another list item here.
+                            </li>
+                            <li
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 0 30px;"
+                              class="list-item-last"
+                            >
+                              Everyone gets a list item, list items for
+                              everyone!
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0 20px 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <!-- Button : BEGIN -->
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                class="button-td button-td-primary"
+                                align="center"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <a
+                                  class="button-a button-a-primary"
+                                  href="https://google.com/"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                >
+                                  Centered Primary Button
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!-- Button : END -->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- 1 Column Text + Button : END -->
+
+                <!-- Background Image with Text : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; background-image: url('https://via.placeholder.com/680x180/222222/666666'); background-color: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: center center; background-size: cover;"
+                    align="center"
+                    background="url('https://via.placeholder.com/680x180/222222/666666')"
+                    bgcolor="#222222"
+                  >
+                    <!--[if gte mso 9]>
+                    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; width: 680px; height: 180px;" src="https://via.placeholder.com/680x180/222222/666666" />
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 680px; height: 180px;">
+                    <v:fill opacity="0%" color="#222222" />
+                    <![endif]-->
+                    <table
+                      align="center"
+                      role="presentation"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-width: 500px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; padding: 40px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                          align="center"
+                        >
+                          <p
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                          >
+                            Maecenas sed ante pellentesque, posuere leo id,
+                            eleifend dolor. Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos
+                            himenaeos. Praesent laoreet malesuada cursus.
+                            Maecenas scelerisque congue eros eu posuere.
+                            Praesent in felis ut velit pretium lobortis rhoncus
+                            ut&nbsp;erat.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if gte mso 9]>
+                    </v:fill>
+                    </v:rect>
+                    </v:image>
+                    <![endif]-->
+                  </td>
+                </tr>
+                <!-- Background Image with Text : END -->
+
+                <!-- 2 Even Columns : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          valign="top"
+                          width="50%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <table
+                                  align="left"
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <img
+                                        src="https://via.placeholder.com/310"
+                                        width="310"
+                                        height=""
+                                        border="0"
+                                        alt="alt_text"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        class="center-on-narrow"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      class="stack-column-center"
+                                    >
+                                      <p
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                                      >
+                                        Maecenas sed ante pellentesque, posuere
+                                        leo id, eleifend dolor. Class aptent
+                                        taciti sociosqu ad litora torquent per
+                                        conubia nostra, per inceptos himenaeos.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <td
+                          valign="top"
+                          width="50%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <table
+                                  align="left"
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <img
+                                        src="https://via.placeholder.com/310"
+                                        width="310"
+                                        height=""
+                                        border="0"
+                                        alt="alt_text"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        class="center-on-narrow"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      class="stack-column-center"
+                                    >
+                                      <p
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                                      >
+                                        Maecenas sed ante pellentesque, posuere
+                                        leo id, eleifend dolor. Class aptent
+                                        taciti sociosqu ad litora torquent per
+                                        conubia nostra, per inceptos himenaeos.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- 2 Even Columns : END -->
+
+                <!-- 3 Even Columns : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          valign="top"
+                          width="33.333333%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <table
+                                  align="left"
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <img
+                                        src="https://via.placeholder.com/200"
+                                        width="200"
+                                        height=""
+                                        border="0"
+                                        alt="alt_text"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        class="center-on-narrow"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      class="stack-column-center"
+                                    >
+                                      <p
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                                      >
+                                        Maecenas sed ante pellentesque, posuere
+                                        leo id, eleifend dolor. Class aptent
+                                        taciti sociosqu ad litora torquent per
+                                        conubia nostra, per inceptos himenaeos.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <td
+                          valign="top"
+                          width="33.333333%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <table
+                                  align="left"
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <img
+                                        src="https://via.placeholder.com/200"
+                                        width="200"
+                                        height=""
+                                        border="0"
+                                        alt="alt_text"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        class="center-on-narrow"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      class="stack-column-center"
+                                    >
+                                      <p
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                                      >
+                                        Maecenas sed ante pellentesque, posuere
+                                        leo id, eleifend dolor. Class aptent
+                                        taciti sociosqu ad litora torquent per
+                                        conubia nostra, per inceptos himenaeos.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <td
+                          valign="top"
+                          width="33.333333%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <table
+                                  align="left"
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <img
+                                        src="https://via.placeholder.com/200"
+                                        width="200"
+                                        height=""
+                                        border="0"
+                                        alt="alt_text"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        class="center-on-narrow"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      class="stack-column-center"
+                                    >
+                                      <p
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                                      >
+                                        Maecenas sed ante pellentesque, posuere
+                                        leo id, eleifend dolor. Class aptent
+                                        taciti sociosqu ad litora torquent per
+                                        conubia nostra, per inceptos himenaeos.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- 3 Even Columns : END -->
+
+                <!-- Thumbnail Left, Text Right : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+                  <td
+                    dir="ltr"
+                    height="100%"
+                    valign="top"
+                    width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          valign="top"
+                          width="33.333333%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                dir="ltr"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0 10px 10px 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <img
+                                  src="https://via.placeholder.com/200"
+                                  width="200"
+                                  height=""
+                                  border="0"
+                                  alt="alt_text"
+                                  class="center-on-narrow"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <td
+                          valign="top"
+                          width="66.666666%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                dir="ltr"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                class="stack-column-center"
+                                align="left"
+                              >
+                                <h2
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;"
+                                >
+                                  Class aptent taciti sociosqu
+                                </h2>
+                                <p
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 0;"
+                                >
+                                  Maecenas sed ante pellentesque, posuere leo
+                                  id, eleifend dolor. Class aptent taciti
+                                  sociosqu ad litora torquent per conubia
+                                  nostra, per inceptos himenaeos.
+                                </p>
+
+                                <!-- Button : BEGIN -->
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  class="center-on-narrow"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; float: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      class="button-td button-td-primary"
+                                      align="center"
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <a
+                                        class="button-a button-a-primary"
+                                        href="https://google.com/"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                      >
+                                        Primary Button
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                                <!-- Button : END -->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Thumbnail Left, Text Right : END -->
+
+                <!-- Thumbnail Right, Text Left : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                  <td
+                    dir="rtl"
+                    height="100%"
+                    valign="top"
+                    width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          valign="top"
+                          width="33.333333%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                dir="ltr"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0 10px 10px 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              >
+                                <img
+                                  src="https://via.placeholder.com/200"
+                                  width="200"
+                                  height=""
+                                  border="0"
+                                  alt="alt_text"
+                                  class="center-on-narrow"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <td
+                          valign="top"
+                          width="66.666666%"
+                          class="stack-column"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <table
+                            align="center"
+                            role="presentation"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            width="100%"
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                          >
+                            <tr
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                            >
+                              <td
+                                dir="ltr"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                class="stack-column-center"
+                                align="left"
+                              >
+                                <h2
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;"
+                                >
+                                  Class aptent taciti sociosqu
+                                </h2>
+                                <p
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 0;"
+                                >
+                                  Maecenas sed ante pellentesque, posuere leo
+                                  id, eleifend dolor. Class aptent taciti
+                                  sociosqu ad litora torquent per conubia
+                                  nostra, per inceptos himenaeos.
+                                </p>
+
+                                <!-- Button : BEGIN -->
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  class="center-on-narrow"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; float: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                                >
+                                  <tr
+                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                                  >
+                                    <td
+                                      class="button-td button-td-primary"
+                                      align="center"
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                    >
+                                      <a
+                                        class="button-a button-a-primary"
+                                        href="https://google.com/"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                      >
+                                        Primary Button
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                                <!-- Button : END -->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Thumbnail Right, Text Left : END -->
+
+                <!-- Clear Spacer : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    aria-hidden="true"
+                    height="40"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 0px; line-height: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+
+                <!-- 1 Column Text : BEGIN -->
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    bgcolor="#ffffff"
+                  >
+                    <table
+                      align="center"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    >
+                      <tr
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      >
+                        <td
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        >
+                          <p
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 10px 0;"
+                          >
+                            Maecenas sed ante pellentesque, posuere leo id,
+                            eleifend dolor. Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos
+                            himenaeos. Praesent laoreet malesuada cursus.
+                            Maecenas scelerisque congue eros eu posuere.
+                            Praesent in felis ut velit pretium lobortis rhoncus
+                            ut&nbsp;erat.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- 1 Column Text : END -->
+              </table>
+
+              <!-- Email Body : END -->
+
+              <!-- Email Footer : BEGIN -->
+              <table
+                align="center"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-width: 680px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                class="email-container"
+              >
+                <tr
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                >
+                  <td
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                    align="center"
+                  >
+                    <webversion
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #cccccc; text-decoration: underline; font-weight: bold;"
+                    >
+                      View as a Web Page
+                    </webversion>
+                    <br
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    />
+                    <br
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    />
+                    Company Name
+                    <br
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    />
+                    <span
+                      class="unstyle-auto-detected-links"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    >
+                      123 Fake Street, SpringField, OR, 97477 US
+                      <br
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                      />
+                      (123) 456-7890
+                    </span>
+                    <br
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    />
+                    <br
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    />
+                    <unsubscribe
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #888888; text-decoration: underline;"
+                    >
+                      unsubscribe
+                    </unsubscribe>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Email Footer : END -->
+            </div>
+
+            <!-- Full Bleed Background Section : BEGIN -->
+            <table
+              align="center"
+              role="presentation"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              width="100%"
+              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #709f2b; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+              bgcolor="#709f2b"
+            >
+              <tr
+                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+              >
+                <td
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                >
+                  <table
+                    align="center"
+                    role="presentation"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; max-width: 680px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                    class="email-container"
+                  >
+                    <tr
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                    >
+                      <td
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                      >
+                        <table
+                          align="center"
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          width="100%"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;"
+                        >
+                          <tr
+                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+                          >
+                            <td
+                              style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              align="left"
+                            >
+                              <p
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
+                              >
+                                Maecenas sed ante pellentesque, posuere leo id,
+                                eleifend dolor. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos
+                                himenaeos. Praesent laoreet malesuada cursus.
+                                Maecenas scelerisque congue eros eu posuere.
+                                Praesent in felis ut velit pretium lobortis
+                                rhoncus ut&nbsp;erat.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Full Bleed Background Section : END -->
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
