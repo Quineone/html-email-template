@@ -2,8 +2,7 @@
 A common use responsive HTML email template
 
 ## Note
-* `email-inlined.html` is forked from [Cerberus](https://github.com/TedGoas/Cerberus/edit/master/cerberus-hybrid.html)
-* `email-boilerplate.html` is an adapted version form [Cerberus](https://github.com/TedGoas/Cerberus/edit/master/cerberus-hybrid.html)
+* `email-boilerplate.html` is an adapted version based on `email-origin.html` [Cerberus](https://github.com/TedGoas/Cerberus/edit/master/cerberus-hybrid.html)
 
 ## Inline your CSS before sending
 Email is notorious for inconsistent CSS support. Therefore you should always inline your CSS before sending.
