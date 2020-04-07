@@ -35,7 +35,7 @@
     <![endif]-->
 
     <!-- Web Font / @font-face : BEGIN -->
-    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <!-- NOTE: If web fonts are not required, this `Web Font` section can be safely removed. -->
 
     <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
     <!--[if mso]>
@@ -114,8 +114,8 @@
 
       /* What it does: A work-around for email clients meddling in triggered links. */
       a[x-apple-data-detectors],  /* iOS */
-        .unstyle-auto-detected-links a,
-        .aBn {
+      .unstyle-auto-detected-links a,
+      .aBn {
         border-bottom: 0 !important;
         cursor: default !important;
         color: inherit !important;
@@ -172,24 +172,29 @@
       .button-a {
         transition: all 100ms ease-in;
       }
+      .button-td-primary,
+      .button-a-primary {
+        background-color: #222222 !important;
+        border-color: #222222 !important;
+      }
       .button-td-primary:hover,
       .button-a-primary:hover {
-        background: #555555 !important;
+        background-color: #555555 !important;
         border-color: #555555 !important;
       }
 
       /* Media Queries */
       @media screen and (max-width: 480px) {
         /* What it does: Forces table cells into full-width rows. */
-        .stack-column,
-        .stack-column-center {
+        .stack-column {
           display: block !important;
           width: 100% !important;
           max-width: 100% !important;
           direction: ltr !important;
         }
+
         /* And center justify these ones. */
-        .stack-column-center {
+        .m-text-center {
           text-align: center !important;
         }
 
@@ -230,6 +235,7 @@
       style="width: 100%; background-color: #222222;"
     >
       <table
+        align="center"
         role="presentation"
         border="0"
         cellpadding="0"
@@ -294,7 +300,7 @@
                       height="50"
                       alt="alt_text"
                       border="0"
-                      style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                      style="height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                     />
                   </td>
                 </tr>
@@ -309,7 +315,7 @@
                       height=""
                       alt="alt_text"
                       border="0"
-                      style="width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
+                      style="width: 100%; max-width: 680px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
                       class="g-img"
                     />
                   </td>
@@ -382,12 +388,12 @@
                               <td
                                 class="button-td button-td-primary"
                                 align="center"
-                                style="border-radius: 4px; background: #222222;"
+                                style="border-radius: 4px; background-color: #222222;"
                               >
                                 <a
                                   class="button-a button-a-primary"
                                   href="https://google.com/"
-                                  style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                  style="background-color: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
                                 >
                                   Centered Primary Button
                                 </a>
@@ -489,7 +495,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="width: 100%; max-width: 310px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -497,7 +503,7 @@
                                   <tr>
                                     <td
                                       style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p style="margin: 0;">
                                         Maecenas sed ante pellentesque, posuere
@@ -541,7 +547,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="width: 100%; max-width: 310px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -549,7 +555,7 @@
                                   <tr>
                                     <td
                                       style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p style="margin: 0;">
                                         Maecenas sed ante pellentesque, posuere
@@ -614,7 +620,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -622,7 +628,7 @@
                                   <tr>
                                     <td
                                       style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p style="margin: 0;">
                                         Maecenas sed ante pellentesque, posuere
@@ -670,7 +676,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -678,7 +684,7 @@
                                   <tr>
                                     <td
                                       style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p style="margin: 0;">
                                         Maecenas sed ante pellentesque, posuere
@@ -726,7 +732,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -734,7 +740,7 @@
                                   <tr>
                                     <td
                                       style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p style="margin: 0;">
                                         Maecenas sed ante pellentesque, posuere
@@ -796,7 +802,7 @@
                                   border="0"
                                   alt="alt_text"
                                   class="center-on-narrow"
-                                  style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                  style="width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                                 />
                               </td>
                             </tr>
@@ -820,7 +826,7 @@
                               <td
                                 dir="ltr"
                                 style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;"
-                                class="stack-column-center"
+                                class="m-text-center"
                               >
                                 <h2
                                   style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;"
@@ -847,12 +853,12 @@
                                     <td
                                       class="button-td button-td-primary"
                                       align="center"
-                                      style="border-radius: 4px; background: #222222;"
+                                      style="border-radius: 4px; background-color: #222222;"
                                     >
                                       <a
                                         class="button-a button-a-primary"
                                         href="https://google.com/"
-                                        style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                        style="background-color: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
                                       >
                                         Primary Button
                                       </a>
@@ -912,7 +918,7 @@
                                   border="0"
                                   alt="alt_text"
                                   class="center-on-narrow"
-                                  style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                  style="width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                                 />
                               </td>
                             </tr>
@@ -936,7 +942,7 @@
                               <td
                                 dir="ltr"
                                 style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left;"
-                                class="stack-column-center"
+                                class="m-text-center"
                               >
                                 <h2
                                   style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;"
@@ -963,12 +969,12 @@
                                     <td
                                       class="button-td button-td-primary"
                                       align="center"
-                                      style="border-radius: 4px; background: #222222;"
+                                      style="border-radius: 4px; background-color: #222222;"
                                     >
                                       <a
                                         class="button-a button-a-primary"
                                         href="https://google.com/"
-                                        style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                        style="background-color: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
                                       >
                                         Primary Button
                                       </a>

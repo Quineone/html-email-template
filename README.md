@@ -11,9 +11,9 @@ Email is notorious for inconsistent CSS support. Therefore you should always inl
 For an API service (like Mailgun, SendGrid, Postmark) **you need to inline the CSS before sending**. See `email-inlined.html` for an example.
 You can use this [Email CSS Inliner](https://htmlemail.io/inline/) or a module like [Juice](https://github.com/Automattic/juice) to do this automatically.
 
-* Copy all of email.html
-* Paste the HTML as the source into the inliner
-* Copy the HTML output and use this as the email template you send
+* Copy all of [email-boilerplate.html](https://github.com/Quineone/html-email-template/blob/master/email-boilerplate.html)
+* Paste the codes as the source into the `Input: Source HTML/CSS`
+* Copy the output of `Output: Inlined CSS` and use this as the email template you send
 
 ### Sending emails using a marketing service like Mailchimp?
 Use the template `email-boilerplate.html` as is. They'll put the CSS inline for you when you put together your campaign.

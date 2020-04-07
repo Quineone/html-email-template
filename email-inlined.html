@@ -36,7 +36,7 @@
     <![endif]-->
 
     <!-- Web Font / @font-face : BEGIN -->
-    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <!-- NOTE: If web fonts are not required, this `Web Font` section can be safely removed. -->
 
     <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
     <!--[if mso]>
@@ -77,15 +77,14 @@
     <!-- Progressive Enhancements : BEGIN -->
     <style>
       @media screen and (max-width: 480px) {
-        .stack-column,
-        .stack-column-center {
+        .stack-column {
           display: block !important;
           width: 100% !important;
           max-width: 100% !important;
           direction: ltr !important;
         }
 
-        .stack-column-center {
+        .m-text-center {
           text-align: center !important;
         }
 
@@ -125,6 +124,7 @@
       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; background-color: #222222;"
     >
       <table
+        align="center"
         role="presentation"
         border="0"
         cellpadding="0"
@@ -197,7 +197,7 @@
                       height="50"
                       alt="alt_text"
                       border="0"
-                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                     />
                   </td>
                 </tr>
@@ -217,7 +217,7 @@
                       height=""
                       alt="alt_text"
                       border="0"
-                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 680px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
                       class="g-img"
                     />
                   </td>
@@ -309,12 +309,13 @@
                               <td
                                 class="button-td button-td-primary"
                                 align="center"
-                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #222222; border-color: #222222;"
+                                bgcolor="#222222"
                               >
                                 <a
                                   class="button-a button-a-primary"
                                   href="https://google.com/"
-                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px; background-color: #222222; border-color: #222222;"
                                 >
                                   Centered Primary Button
                                 </a>
@@ -448,7 +449,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -458,7 +459,7 @@
                                   >
                                     <td
                                       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p
                                         style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
@@ -518,7 +519,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 310px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -528,7 +529,7 @@
                                   >
                                     <td
                                       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p
                                         style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
@@ -613,7 +614,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -623,7 +624,7 @@
                                   >
                                     <td
                                       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p
                                         style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
@@ -683,7 +684,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -693,7 +694,7 @@
                                   >
                                     <td
                                       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p
                                         style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
@@ -753,7 +754,7 @@
                                         height=""
                                         border="0"
                                         alt="alt_text"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;"
                                         class="center-on-narrow"
                                       />
                                     </td>
@@ -763,7 +764,7 @@
                                   >
                                     <td
                                       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                      class="stack-column-center"
+                                      class="m-text-center"
                                     >
                                       <p
                                         style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"
@@ -840,7 +841,7 @@
                                   border="0"
                                   alt="alt_text"
                                   class="center-on-narrow"
-                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                                 />
                               </td>
                             </tr>
@@ -868,7 +869,7 @@
                               <td
                                 dir="ltr"
                                 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                class="stack-column-center"
+                                class="m-text-center"
                                 align="left"
                               >
                                 <h2
@@ -900,12 +901,13 @@
                                     <td
                                       class="button-td button-td-primary"
                                       align="center"
-                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #222222; border-color: #222222;"
+                                      bgcolor="#222222"
                                     >
                                       <a
                                         class="button-a button-a-primary"
                                         href="https://google.com/"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px; background-color: #222222; border-color: #222222;"
                                       >
                                         Primary Button
                                       </a>
@@ -978,7 +980,7 @@
                                   border="0"
                                   alt="alt_text"
                                   class="center-on-narrow"
-                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 200px; height: auto; background-color: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;"
                                 />
                               </td>
                             </tr>
@@ -1006,7 +1008,7 @@
                               <td
                                 dir="ltr"
                                 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                                class="stack-column-center"
+                                class="m-text-center"
                                 align="left"
                               >
                                 <h2
@@ -1038,12 +1040,13 @@
                                     <td
                                       class="button-td button-td-primary"
                                       align="center"
-                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; background: #222222; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border-radius: 4px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #222222; border-color: #222222;"
+                                      bgcolor="#222222"
                                     >
                                       <a
                                         class="button-a button-a-primary"
                                         href="https://google.com/"
-                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; transition: all 100ms ease-in; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; text-align: center; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px; background-color: #222222; border-color: #222222;"
                                       >
                                         Primary Button
                                       </a>
